@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>FCC Twitch API pass-through</title>
+  <style media="screen">
+    body {
+      font-family: sans-serif;
+      color: #222;
+      background-color: #f7f7f7;
+      padding: 10px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    code {
+      background-color: #ff9;
+      padding: 3px;
+    }
+    p.usage {
+     display : block;
+     background-color: #d0e7d0;
+     padding: 15px;
+     border-radius: 15px;
+     max-width:900px;
+     line-height:1.5em;
+     margin:0 auto;
+    }
+  </style>
+</head>
+<body>
+	<h2>Free Code Camp Twitch API Pass-through</h2>
+  <p class="usage">
+    USAGE:<br>
+    Replace the Twitch API <strong>base URL</strong> <code>https://api.twitch.tv/kraken</code> with
+    <code>https://wind-bow.hyperdev.space/twitch-api</code>. Use this endpoint according to the 
+    <a href="https://github.com/justintv/Twitch-API" target="_blank">Twitch API documentation</a>.<br><br>
+    NOTE:<br>This server caches data to lower the request rate. To prevent abuses this server accepts <code>GET</code> requests only, and serves only routes <code>/users/:user</code>, <code>/channels/:channel</code>, and <code>/streams/:stream</code>. These are more than enough to complete the challenge.
+  </p>
+</body>
+</html>
